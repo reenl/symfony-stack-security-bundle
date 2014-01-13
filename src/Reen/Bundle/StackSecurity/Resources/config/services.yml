@@ -1,0 +1,12 @@
+services:
+    stack_token.security.authentication.provider:
+        class:  Reen\Bundle\StackSecurity\Authentication\Provider\StackProvider
+        arguments:
+          - "" # Injected by DependencyInjection
+
+    stack_challenge.security.authentication.listener:
+        class:  Reen\Bundle\StackSecurity\Firewall\StackChallengeListener
+
+    stack_token.security.authentication.listener:
+        class:  Reen\Bundle\StackSecurity\Firewall\StackTokenListener
+        arguments: ["@security.context", "@security.authentication.manager"]

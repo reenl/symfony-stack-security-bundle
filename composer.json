@@ -1,0 +1,19 @@
+{
+    "name": "reen/symfony-stack-security",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "A Symfony security provider for STACK compatibility.",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.4",
+        "symfony/security-bundle": "~2.4"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.4.x-dev"
+        }
+    }
+}
